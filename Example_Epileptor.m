@@ -14,7 +14,12 @@ noise_type = 5;         % 1 = harmonic
 additive_noise = 1;     % 0 = multiplicative noise
                         % 1 = additive noise
 
-%% Epileptor model simulation
+% Differentiator parameters
+n_d = 2;
+n_f = 10;
+L_0 = 50;
+q = 0;              % NaN to disable discrete L-adaptation
+trans_diff = 5;     % differentiator transient to discard 
 
 % Simulation time
 dt = 1e-3;
@@ -24,6 +29,7 @@ T = length(0:dt:tf);                % number of data points
 st = 1e-3;                           % sampling time
 N = length(0:round(st/dt):tf/dt);   % sampled data points
 
+%% Epileptor model simulation
 % Initial conditions
 x(:,1) = [0.022;0.91;3.84;-1.11;0.73;0];
 taux(1) = t0;
@@ -33,13 +39,6 @@ x0 = -1.6;      y0 = 1;
 Irest1 = 3.1;   Irest2 = 0.45;
 tau0 = 2857;    tau2 = 10;
 gamma = 0.01;
-
-% Differentiator parameters
-n_d = 2;
-n_f = 10;
-L_0 = 50;
-q = 0;              % NaN to disable discrete L-adaptation
-trans_diff = 5;     % differentiator transient to discard 
 
 % Simulation noise-free system
 for k = 2:T
