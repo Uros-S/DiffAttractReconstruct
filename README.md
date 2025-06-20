@@ -1,5 +1,6 @@
 # Efficient-and-faithful-reconstruction-of-dynamical-attractors-using-Differentiators
 Code used to generate the figures in Main Text and Supplementary Material of the paper "Efficient and faithful reconstruction of dynamical attractors using Differentiators" by U. Sutulovic, D. Proverbio, R. Katz, and G. Giordano.
+Supplementary material for the paper can be found at the Zenodo link https://zenodo.org/records/15706888 .
 
 # License
 
