@@ -21,3 +21,6 @@ The full text of the GNU General Public License can be found in the file "LICENS
 - `systems` : This folder contains the functions to simulate the systems considered in the examples.
 
 - `util` : This folder contains utility functions to retrieve the paper results, including the Differentiator and the Schreiber-Grassberger method.
+
+# Reference
+U Sutulovic, D Proverbio, R Katz, G Giordano. Efficient and faithful reconstruction of dynamical attractors using homogeneous differentiators. Chaos, Solitons & Fractals 199 (3), 116798 (2025). https://www.sciencedirect.com/science/article/pii/S0960077925008112
