@@ -1,4 +1,8 @@
 % Uros Sutulovic, 03/2025
+% If you use this code, please reference:
+% U Sutulovic, D Proverbio, R Katz, G Giordano. 
+% Efficient and faithful reconstruction of dynamical attractors using homogeneous differentiators. 
+% Chaos, Solitons & Fractals 199 (3), 116798 (2025)
 
 clear; close all; clc;
 addpath([pwd,'/Systems/'])
@@ -235,3 +239,4 @@ ax.FontSize = 25;
 
 % Relative errors
 figID = error_comparison_HR([s(:,1),s(:,2),s(:,3)],[x_1_D,x_2_D,x_3_D],[x_1_D_f,x_2_D_f,x_3_D_f],40,figID);
+
