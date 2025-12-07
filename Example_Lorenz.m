@@ -1,4 +1,8 @@
 % Uros Sutulovic, 03/2025
+% If you use this code, please reference:
+% U Sutulovic, D Proverbio, R Katz, G Giordano. 
+% Efficient and faithful reconstruction of dynamical attractors using homogeneous differentiators. 
+% Chaos, Solitons & Fractals 199 (3), 116798 (2025)
 
 clear; close all; clc;
 addpath([pwd,'/Systems/']) 
@@ -325,4 +329,5 @@ switch include_grassberger
         % Space-filling patterns
         figID = space_filling_Lorenz(y_delayed, signal_delayed, y_D_delayed, y_denoised, [4.8,11.75;4.8,11.75], [-11.46,-5.15;-11.46,-5.15],figID);
 end
+
 
