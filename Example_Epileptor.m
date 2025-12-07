@@ -1,4 +1,8 @@
 % Uros Sutulovic, 03/2025
+% If you use this code, please reference:
+% U Sutulovic, D Proverbio, R Katz, G Giordano. 
+% Efficient and faithful reconstruction of dynamical attractors using homogeneous differentiators. 
+% Chaos, Solitons & Fractals 199 (3), 116798 (2025)
 
 clear; close all; clc;
 addpath([pwd,'/Systems/'])
@@ -325,4 +329,5 @@ ylabel('$\dot{y}_{D,f}$','interpreter','latex');
 title(['Differentiator plus SG filter',newline,'reconstruction']);
 ax = gca;
 ax.FontSize = 25;
+
 
